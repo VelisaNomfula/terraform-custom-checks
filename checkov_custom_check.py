@@ -8,7 +8,7 @@ from checkov.terraform.checks.resource.base_resource_check import BaseResourceCh
 
 class UnencryptedS3Bucket(BaseResourceCheck):
     def __init__(self):
-        name = "Ensure S3 bucket is encrypted at rest"
+        name = "Ensure S3 bucket is encrypted at rest================================================="
         id = "CUSTOM_S3_ENCRYPTED"
         supported_resources = ['aws_s3_bucket']
         categories = [CheckCategories.ENCRYPTION]
